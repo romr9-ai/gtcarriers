@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GT Carriers INC - Soluciones de Logística y Transporte</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="GT Carriers: Su socio logístico de confianza desde 1993. Ofrecemos soluciones integrales de transporte, drayage, LTL/FTL y almacenaje en el sur de California y la frontera." />
+  
+  <!-- OpenGraph Meta Tags (for social media sharing) -->
+  <meta property="og:title" content="GT Carriers INC - Soluciones de Logística y Transporte" />
+  <meta property="og:description" content="Fortaleciendo su cadena de suministro con soluciones de transporte y logística confiables y seguras." />
+  <meta property="og:image" content="https://images.pexels.com/photos/1267325/pexels-photo-1267325.jpeg" />
+  <meta property="og:url" content="https://www.gtcarriers.com" />
+  <meta property="og:type" content="website" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/png;base64,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" />
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- React (Production Version) -->
+  <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+  
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      scroll-behavior: smooth;
+    }
+    .hero-gradient {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.4) 60%, rgba(0, 0, 0, 0.1) 100%);
+    }
+    .section-title {
+        font-weight: 800;
+        font-size: 2.25rem; /* text-4xl */
+        letter-spacing: -0.025em;
+    }
+    .section-subtitle {
+        font-size: 1.125rem; /* text-lg */
+        color: #4b5563; /* text-gray-600 */
+        margin-top: 0.5rem;
+    }
+    .nav-scrolled {
+        background-color: rgba(17, 24, 39, 0.8);
+        backdrop-filter: blur(8px);
+    }
+    .footer-custom-bg {
+        background-color: #1c2a3e; /* Azul oscuro del logo */
+    }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+
+  <script>
+    // Pure JavaScript with React.createElement, ready for production
+    const { useState, useEffect, Fragment } = React;
+
+    const e = React.createElement;
+
+    const content = {
+      es: {
+        navItems: [
+          { href: "#about", label: "Quiénes Somos" },
+          { href: "#services", label: "Servicios" },
+          { href: "#strengths", label: "Fortalezas" },
+          { href: "#locations", label: "Ubicaciones" },
+          { href: "#contact", label: "Contacto" },
+        ],
+        quoteButton: "Cotizar",
+        heroQuoteButton: "Obtener una Cotización",
+        about: {
+          title: "Su Socio Logístico de Confianza desde 1993",
+          subtitle: "GT Carriers es una empresa de transporte certificada (US Bonded, CTPAT, TSA) con ubicaciones estratégicas en el sur de California. Ofrecemos una gama completa de servicios de transporte y almacenamiento para fortalecer su cadena de suministro.",
+          body: "Con más de 150 empleados y una flota propia de camiones y chasis equipados con GPS, garantizamos un servicio flexible, financieramente sólido y adaptado a las necesidades de nuestros clientes, respaldado por un equipo de despacho disponible 24/7.",
+          fleetAlt: "Nuestra Flota de Camiones GT Carriers"
+        },
+        services: {
+          title: "Soluciones Integrales para su Cadena de Suministro",
+          subtitle: "Desde el transporte local hasta la logística 3PL a nivel nacional, tenemos la experiencia y la infraestructura para mover su carga de manera segura y eficiente.",
+          serviceList: [
+            { title: "Transloading", text: "Servicios de transbordo eficientes en nuestro patio de Wilmington, a minutos del puerto de Long Beach." },
+            { title: "Drayage", text: "Transporte de contenedores desde los puertos de LA, San Pedro y Long Beach a todo el país." },
+            { title: "LTL & FTL", text: "Servicios de carga consolidada (LTL) y completa (FTL) a nivel nacional, con rutas frecuentes al norte de California." },
+            { title: "3PL y Almacenaje", text: "Soluciones logísticas integrales, incluyendo recepción, almacenaje, cross-docking y gestión de inventarios con WMS." },
+          ]
+        },
+        strengths: {
+            stats: [
+                { value: "1993", label: "Fundada en" },
+                { value: "150+", label: "Empleados" },
+                { value: "100+", label: "Chasis propios" },
+                { value: "24/7", label: "Dispatch" }
+            ],
+            certsTitle: "Nuestras Certificaciones"
+        },
+        locations: {
+            title: "Ubicaciones Estratégicas",
+            subtitle: "Nuestros patios y bodegas están ubicados en puntos clave para agilizar sus operaciones logísticas en el sur de California y la frontera."
+        },
+        contact: {
+            title: "¿Listo para Empezar?",
+            subtitle: "Cuéntenos sobre sus necesidades logísticas y nuestro equipo de expertos se pondrá en contacto con usted para ofrecerle una solución a la medida.",
+            office: "Oficina Mexicali",
+            phone: "Teléfono",
+            form: {
+                name: "Nombre",
+                company: "Compañía",
+                email: "Email",
+                message: "Mensaje",
+                sendButton: "Enviar Mensaje",
+                sendingButton: "Enviando...",
+                sentButton: "¡Enviado!",
+            }
+        },
+        footer: {
+            motto: "Fortaleciendo su cadena de suministro con soluciones de transporte y logística confiables y seguras.",
+            copyright: "Todos los derechos reservados."
+        },
+        ariaLabels: {
+            prevSlide: "Diapositiva anterior",
+            nextSlide: "Siguiente diapositiva"
+        }
+      },
+      en: {
+        navItems: [
+          { href: "#about", label: "About Us" },
+          { href: "#services", label: "Services" },
+          { href: "#strengths", label: "Strengths" },
+          { href: "#locations", label: "Locations" },
+          { href: "#contact", label: "Contact" },
+        ],
+        quoteButton: "Get a Quote",
+        heroQuoteButton: "Get a Quote",
+        about: {
+          title: "Your Trusted Logistics Partner Since 1993",
+          subtitle: "GT Carriers is a certified transportation company (US Bonded, CTPAT, TSA) with strategic locations in Southern California. We offer a full range of transportation and warehousing services to strengthen your supply chain.",
+          body: "With over 150 employees and our own fleet of GPS-equipped trucks and chassis, we guarantee a flexible, financially sound service tailored to our clients' needs, backed by a 24/7 dispatch team.",
+          fleetAlt: "Our GT Carriers Truck Fleet"
+        },
+        services: {
+          title: "Comprehensive Solutions for Your Supply Chain",
+          subtitle: "From local transport to nationwide 3PL logistics, we have the experience and infrastructure to move your cargo safely and efficiently.",
+          serviceList: [
+            { title: "Transloading", text: "Efficient transloading services at our Wilmington yard, minutes from the Port of Long Beach." },
+            { title: "Drayage", text: "Container transport from the ports of LA, San Pedro, and Long Beach to anywhere in the country." },
+            { title: "LTL & FTL", text: "Less-than-truckload (LTL) and full-truckload (FTL) services nationwide, with frequent routes to Northern California." },
+            { title: "3PL & Warehousing", text: "Comprehensive logistics solutions, including receiving, storage, cross-docking, and inventory management with WMS." },
+          ]
+        },
+        strengths: {
+            stats: [
+                { value: "1993", label: "Founded in" },
+                { value: "150+", label: "Employees" },
+                { value: "100+", label: "Own Chassis" },
+                { value: "24/7", label: "Dispatch" }
+            ],
+            certsTitle: "Our Certifications"
+        },
+        locations: {
+            title: "Strategic Locations",
+            subtitle: "Our yards and warehouses are located at key points to streamline your logistics operations in Southern California and the border."
+        },
+        contact: {
+            title: "Ready to Get Started?",
+            subtitle: "Tell us about your logistics needs, and our team of experts will contact you with a tailored solution.",
+            office: "Mexicali Office",
+            phone: "Phone",
+            form: {
+                name: "Name",
+                company: "Company",
+                email: "Email",
+                message: "Message",
+                sendButton: "Send Message",
+                sendingButton: "Sending...",
+                sentButton: "Sent!",
+            }
+        },
+        footer: {
+            motto: "Strengthening your supply chain with reliable and secure transportation and logistics solutions.",
+            copyright: "All rights reserved."
+        },
+        ariaLabels: {
+            prevSlide: "Previous slide",
+            nextSlide: "Next slide"
+        }
+      }
+    };
+    
+    const LOGO_URL = "data:image/png;base64,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";
+
+    const LOCATIONS = [
+      { name: "EL CENTRO YARD", address: "1553 S Dogwood Rd, El Centro, CA, 92243", image: "https://images.pexels.com/photos/1267338/pexels-photo-1267338.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" },
+      { name: "SAN DIEGO YARD", address: "1389 LA MEDIA RD, SAN DIEGO, CA 92154", image: "https://images.pexels.com/photos/1034940/pexels-photo-1034940.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" },
+      { name: "JURUPA YARD", address: "6023 Jurupa Ave, Riverside, CA 92504", image: "https://images.pexels.com/photos/7932264/pexels-photo-7932264.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" },
+      { name: "WILMINGTON YARD", address: "920 Nicholson Ave, Wilmington, CA 90744", image: "https://images.pexels.com/photos/2226458/pexels-photo-2226458.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" },
+    ];
+    
+    const SERVICE_ICONS = {
+        transloading: e('svg', { className: "w-12 h-12 text-red-600", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg" }, e('path', { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M4 4v5h5V4H4zm0 9h5v5H4v-5zm9-9h5v5h-5V4zm0 9h5v5h-5v-5z" })),
+        drayage: e('svg', { className: "w-12 h-12 text-red-600", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg" }, e('path', { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z" })),
+        ltl: e('svg', { className: "w-12 h-12 text-red-600", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg" }, e('path', { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" })),
+        tpl: e('svg', { className: "w-12 h-12 text-red-600", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg" }, e('path', { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z" }))
+    };
+
+    const STRENGTH_ICONS = {
+        founded: "M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z",
+        employees: "M17 20h5.5a.5.5 0 00.5-.5V9.5a.5.5 0 00-.5-.5h-13a.5.5 0 00-.5.5v10a.5.5 0 00.5.5H12M12 20v-4m0-4a2 2 0 100-4 2 2 0 000 4z",
+        chassis: "M19 12H5m14 0a2 2 0 012 2v2a2 2 0 01-2 2H5a2 2 0 01-2-2v-2a2 2 0 012-2m14 0V9a2 2 0 00-2-2H5a2 2 0 00-2 2v3",
+        dispatch: "M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+    };
+
+    const CERTS = ["U.S. Bonded Carrier", "C-TPAT Certified", "TSA Indirect Air Carrier", "California Air Resource Certified", "China Certified for Trans Loads", "Member of CTA"];
+
+    function Logo() {
+      return e('a', { href: "#top", className: "flex items-center space-x-2 text-white" }, 
+        e('img', { src: LOGO_URL, alt: "GT Carriers Logo", className: "h-12" })
+      );
+    }
+    
+    function LanguageSwitcher({ language, setLanguage }) {
+        const toggleLanguage = () => {
+            setLanguage(lang => lang === 'es' ? 'en' : 'es');
+        };
+        return e('button', { onClick: toggleLanguage, className: "text-white font-semibold border-2 border-white rounded-md px-3 py-1 text-sm hover:bg-white hover:text-gray-900 transition-colors" }, 
+            language === 'es' ? 'EN' : 'ES'
+        );
+    }
+
+    function Navbar({ language, setLanguage, navItems, quoteButton }) {
+        const [isOpen, setIsOpen] = useState(false);
+        const [scrolled, setScrolled] = useState(false);
+
+        useEffect(() => {
+            const handleScroll = () => setScrolled(window.scrollY > 10);
+            window.addEventListener('scroll', handleScroll);
+            return () => window.removeEventListener('scroll', handleScroll);
+        }, []);
+
+      return e('nav', { className: `fixed top-0 left-0 w-full z-30 p-4 transition-all duration-300 ${scrolled ? 'nav-scrolled' : 'bg-transparent'}`},
+        e('div', { className: "container mx-auto flex justify-between items-center" },
+            e(Logo),
+            e('div', { className: "hidden md:flex items-center space-x-8" }, 
+              navItems.map(item => e('a', { key: item.href, href: item.href, className: "text-white font-semibold hover:text-red-500 transition-colors" }, item.label))
+            ),
+            e('div', { className: "hidden md:flex items-center space-x-4" },
+                e('a', { href: "#contact", className: "bg-red-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-red-700 transition-all" }, quoteButton),
+                e(LanguageSwitcher, { language, setLanguage })
+            ),
+            e('button', { className: "md:hidden text-white", onClick: () => setIsOpen(!isOpen) },
+              e('svg', { className: "w-8 h-8", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24" }, 
+                e('path', { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: isOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16m-7 6h7" })
+              )
+            )
+        ),
+        isOpen && e('div', { className: "md:hidden mt-4 bg-black bg-opacity-80 rounded-lg p-4" },
+            navItems.map(item => e('a', { key: item.href, href: item.href, onClick: () => setIsOpen(false), className: "block text-white text-center py-2 font-semibold hover:bg-red-600 rounded-lg" }, item.label)),
+            e('a', { href: "#contact", onClick: () => setIsOpen(false), className: "block text-center mt-2 bg-red-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-red-700 transition-all" }, quoteButton),
+            e('div', { className: "mt-4 pt-4 border-t border-gray-600 flex justify-center" }, 
+                e(LanguageSwitcher, { language, setLanguage })
+            )
+        )
+      );
+    }
+
+    function HeroSlider({ language, heroQuoteButton, ariaLabels }) {
+        const [index, setIndex] = useState(0);
+
+        useEffect(() => {
+            const timer = setInterval(() => {
+                setIndex(prev => (prev + 1) % LOCATIONS.length);
+            }, 7000);
+            return () => clearInterval(timer);
+        }, []);
+
+        const prev = () => setIndex((index - 1 + LOCATIONS.length) % LOCATIONS.length);
+        const next = () => setIndex((index + 1) % LOCATIONS.length);
+
+        return e('header', { id: "top", className: "relative w-full h-screen bg-black" },
+            LOCATIONS.map((loc, i) => e('div', { key: loc.name, className: `absolute top-0 left-0 w-full h-full transition-opacity duration-1000 ${i === index ? 'opacity-100' : 'opacity-0'}` },
+                e('img', { src: loc.image, alt: loc.name, className: "w-full h-full object-cover" }),
+                e('div', { className: "absolute top-0 left-0 w-full h-full hero-gradient" })
+            )),
+            e('div', { className: "relative h-full flex flex-col justify-center items-center text-center text-white p-4" },
+                e('h1', { className: "text-4xl md:text-7xl font-black uppercase tracking-tighter animate-fade-in-down" }, LOCATIONS[index].name),
+                e('p', { className: "text-lg md:text-2xl mt-4 max-w-3xl animate-fade-in-up" }, LOCATIONS[index].address),
+                e('a', { href: "#contact", className: "mt-8 bg-red-600 text-white font-bold py-3 px-8 rounded-lg text-lg hover:bg-red-700 transition-transform hover:scale-105" }, heroQuoteButton)
+            ),
+            e('button', { onClick: prev, className: "absolute left-4 top-1/2 -translate-y-1/2 bg-white/20 text-white p-2 rounded-full hover:bg-white/40 transition-colors", 'aria-label': ariaLabels.prevSlide },
+                e('svg', { className: "w-6 h-6", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24" }, e('path', { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M15 19l-7-7 7-7" }))
+            ),
+            e('button', { onClick: next, className: "absolute right-4 top-1/2 -translate-y-1/2 bg-white/20 text-white p-2 rounded-full hover:bg-white/40 transition-colors", 'aria-label': ariaLabels.nextSlide },
+                e('svg', { className: "w-6 h-6", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24" }, e('path', { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M9 5l7 7-7 7" }))
+            )
+        );
+    }
+    
+    function About({ content }) {
+      return e('section', { className: "py-20 bg-gray-50", id: "about" },
+        e('div', { className: "container mx-auto px-4" },
+            e('div', { className: "grid md:grid-cols-2 gap-12 items-center" },
+                e('div', { className: "order-2 md:order-1" },
+                    e('h2', { className: "section-title text-gray-800" }, content.title),
+                    e('p', { className: "section-subtitle mt-4" }, content.subtitle),
+                    e('p', { className: "mt-4 text-gray-600" }, content.body)
+                ),
+                e('div', { className: "order-1 md:order-2" },
+                    e('img', { 
+                        src: "https://images.pexels.com/photos/1267325/pexels-photo-1267325.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", 
+                        alt: content.fleetAlt, 
+                        className: "rounded-lg shadow-xl w-full",
+                        loading: "lazy",
+                        decoding: "async"
+                    })
+                )
+            )
+        )
+      );
+    }
+
+    function Services({ content }) {
+        const icons = [SERVICE_ICONS.transloading, SERVICE_ICONS.drayage, SERVICE_ICONS.ltl, SERVICE_ICONS.tpl];
+        return e('section', { className: "py-20", id: "services" },
+            e('div', { className: "container mx-auto px-4 text-center" },
+                e('h2', { className: "section-title text-gray-800" }, content.title),
+                e('p', { className: "section-subtitle max-w-3xl mx-auto" }, content.subtitle),
+                e('div', { className: "grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-12 text-left" },
+                    content.serviceList.map((s, i) => e('div', { className: "bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300", key: s.title },
+                        e('div', { className: "mb-4" }, icons[i]),
+                        e('h3', { className: "text-xl font-bold text-gray-800 mb-2" }, s.title),
+                        e('p', { className: "text-gray-600" }, s.text)
+                    ))
+                )
+            )
+        );
+    }
+    
+    function Strengths({ content }) {
+        const icons = [STRENGTH_ICONS.founded, STRENGTH_ICONS.employees, STRENGTH_ICONS.chassis, STRENGTH_ICONS.dispatch];
+        return e('section', { className: "py-20 bg-gray-800 text-white", id: "strengths" },
+            e('div', { className: "container mx-auto px-4" },
+                e('div', { className: "grid grid-cols-2 md:grid-cols-4 gap-8 text-center" },
+                    content.stats.map((s, i) => e('div', { key: s.label, className: "flex flex-col items-center" },
+                        e('svg', { className: "w-12 h-12 text-red-500 mb-3", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24" }, e('path', { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: icons[i] })),
+                        e('div', { className: "text-4xl font-extrabold" }, s.value),
+                        e('div', { className: "text-gray-300 mt-1" }, s.label)
+                    ))
+                ),
+                e('div', { className: "mt-16 text-center" },
+                    e('h3', { className: "text-2xl font-bold mb-4" }, content.certsTitle),
+                    e('div', { className: "flex flex-wrap justify-center items-center gap-x-6 gap-y-2" },
+                       CERTS.map(c => e('span', { key: c, className: "font-semibold text-gray-200" }, c))
+                    )
+                )
+            )
+        );
+    }
+
+    function Locations({ content }) {
+        return e('section', { className: "py-20 bg-gray-50", id: "locations" },
+            e('div', { className: "container mx-auto px-4" },
+                e('h2', { className: "section-title text-gray-800 text-center" }, content.title),
+                e('p', { className: "section-subtitle text-center max-w-3xl mx-auto" }, content.subtitle),
+                e('div', { className: "grid md:grid-cols-2 gap-8 mt-12" },
+                    LOCATIONS.map(y => e('div', { className: "bg-white rounded-lg shadow-lg overflow-hidden group", key: y.name },
+                        e('img', { 
+                            src: y.image, 
+                            alt: y.name, 
+                            className: "w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300",
+                            loading: "lazy",
+                            decoding: "async"
+                        }),
+                        e('div', { className: "p-6" },
+                            e('h3', { className: "text-xl font-bold text-gray-800" }, y.name),
+                            e('p', { className: "text-gray-600 mt-1" }, y.address)
+                        )
+                    ))
+                )
+            )
+        );
+    }
+    
+    function Contact({ content }) {
+        const [status, setStatus] = useState("idle");
+        const onSubmit = (e) => {
+            e.preventDefault();
+            setStatus("sending");
+            setTimeout(() => {
+                setStatus("sent");
+                e.target.reset();
+                setTimeout(() => setStatus("idle"), 3000);
+            }, 1000);
+        };
+
+        return e('section', { className: "py-20", id: "contact" },
+            e('div', { className: "container mx-auto px-4" },
+                e('div', { className: "grid lg:grid-cols-2 gap-12 items-start" },
+                    e('div', null,
+                        e('h2', { className: "section-title text-gray-800" }, content.title),
+                        e('p', { className: "section-subtitle mt-4" }, content.subtitle),
+                        e('div', { className: "mt-8 space-y-4" },
+                            e('div', { className: "flex items-start gap-4" },
+                                e('svg', { className: "w-6 h-6 text-red-600 mt-1 flex-shrink-0", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24" }, 
+                                    e('path', { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" }),
+                                    e('path', { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M15 11a3 3 0 11-6 0 3 3 0 016 0z" })
+                                ),
+                                e('div', null,
+                                    e('h4', { className: "font-bold text-gray-800" }, content.office),
+                                    e('p', { className: "text-gray-600" }, "2799 Calzada Cetys and Calle Cuarta Building C-Local 11, Colonia Rivera Mexicali, B.C.")
+                                )
+                            ),
+                            e('div', { className: "flex items-start gap-4" },
+                                e('svg', { className: "w-6 h-6 text-red-600 mt-1 flex-shrink-0", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24" }, 
+                                    e('path', { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" })
+                                ),
+                                e('div', null,
+                                    e('h4', { className: "font-bold text-gray-800" }, content.phone),
+                                    e('p', { className: "text-gray-600" }, "(686) 565-8581")
+                                )
+                            )
+                        )
+                    ),
+                    e('form', { className: "bg-white p-8 rounded-lg shadow-2xl", onSubmit },
+                        e('div', { className: "grid sm:grid-cols-2 gap-6" },
+                            e('div', null,
+                                e('label', { className: "font-semibold text-gray-700 block mb-2" }, content.form.name),
+                                e('input', { className: "w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent", required: true })
+                            ),
+                            e('div', null,
+                                e('label', { className: "font-semibold text-gray-700 block mb-2" }, content.form.company),
+                                e('input', { className: "w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent" })
+                            ),
+                            e('div', { className: "sm:col-span-2" },
+                                e('label', { className: "font-semibold text-gray-700 block mb-2" }, content.form.email),
+                                e('input', { type: "email", className: "w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent", required: true })
+                            ),
+                            e('div', { className: "sm:col-span-2" },
+                                e('label', { className: "font-semibold text-gray-700 block mb-2" }, content.form.message),
+                                e('textarea', { className: "w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent", rows: 5, required: true })
+                            )
+                        ),
+                        e('div', { className: "mt-6" },
+                            e('button', { className: "w-full bg-red-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-red-700 transition-all text-lg", disabled: status !== "idle" },
+                                status === 'idle' ? content.form.sendButton :
+                                status === 'sending' ? content.form.sendingButton :
+                                content.form.sentButton
+                            )
+                        )
+                    )
+                )
+            )
+        );
+    }
+
+    function Footer({ language, setLanguage, content }) {
+        const year = new Date().getFullYear();
+        return e('footer', { className: "py-8 footer-custom-bg text-gray-400" },
+            e('div', { className: "container mx-auto px-4 text-center" },
+                e('div', { className: "flex justify-center" }, e(Logo)),
+                e('p', { className: "mt-4 max-w-2xl mx-auto" }, content.motto),
+                e('div', { className: "mt-6 flex justify-center" }, e(LanguageSwitcher, { language, setLanguage })),
+                e('div', { className: "mt-6 border-t border-gray-700 pt-6 flex flex-col sm:flex-row justify-between items-center gap-4" },
+                    e('p', { className: "text-sm" }, `© ${year} GT Carriers Inc. ${content.copyright}`),
+                    e('p', { className: "text-sm font-semibold text-gray-300" }, "CTPAT • TSA • BONDED CARRIER")
+                )
+            )
+        );
+    }
+    
+    function App() {
+        const [language, setLanguage] = useState('es');
+        const currentContent = content[language];
+
+        useEffect(() => {
+            document.documentElement.lang = language;
+            const descriptionMeta = document.querySelector('meta[name="description"]');
+            if (descriptionMeta) {
+                descriptionMeta.setAttribute('content', language === 'es' ? 'GT Carriers: Su socio logístico de confianza desde 1993. Ofrecemos soluciones integrales de transporte, drayage, LTL/FTL y almacenaje en el sur de California y la frontera.' : 'GT Carriers: Your trusted logistics partner since 1993. We offer comprehensive solutions for transport, drayage, LTL/FTL, and warehousing in Southern California and the border.');
+            }
+        }, [language]);
+
+        return e(Fragment, null,
+            e(Navbar, { language, setLanguage, navItems: currentContent.navItems, quoteButton: currentContent.quoteButton }),
+            e('main', null,
+                e(HeroSlider, { language, heroQuoteButton: currentContent.heroQuoteButton, ariaLabels: currentContent.ariaLabels }),
+                e(About, { content: currentContent.about }),
+                e(Services, { content: currentContent.services }),
+                e(Strengths, { content: currentContent.strengths }),
+                e(Locations, { content: currentContent.locations }),
+                e(Contact, { content: currentContent.contact })
+            ),
+            e(Footer, { language, setLanguage, content: currentContent.footer })
+        );
+    }
+
+    const container = document.getElementById('root');
+    const root = ReactDOM.createRoot(container);
+    root.render(e(App));
+  </script>
+</body>
+</html>
+
