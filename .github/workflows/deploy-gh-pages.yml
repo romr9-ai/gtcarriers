@@ -1,0 +1,50 @@
+# Nombre del Workflow
+name: Deploy static website to GitHub Pages
+
+# 1. CUÁNDO se ejecuta:
+# Se dispara cada vez que haces un 'push' a la rama 'main'
+on:
+  push:
+    branches:
+      - main  # Asegúrate que esta sea tu rama principal (a veces se llama 'master')
+
+# 2. QUÉ TAREAS (JOBS) se ejecutan:
+jobs:
+  # Tarea única llamada 'deploy'
+  deploy:
+    # Configuración del entorno de despliegue en GitHub Pages
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    
+    # Permisos necesarios para el token de GitHub
+    # Esto resuelve el 'Error 2 (id-token: write permission)' que tuviste
+    permissions:
+      pages: write      # Para desplegar en GitHub Pages
+      id-token: write   # Para autenticar el token del workflow
+
+    # Tipo de máquina virtual donde se ejecuta
+    runs-on: ubuntu-latest
+
+    # 3. LOS PASOS (STEPS) a seguir:
+    steps:
+      # Paso 1: Descargar tu código del repositorio (Checkout)
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # Paso 2: Configurar GitHub Pages
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      # Paso 3: Subir los artefactos (tu index.html, CNAME, css, js, etc.)
+      # La acción se encarga de empaquetar todo lo que está en el root
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Sube el directorio raíz completo
+          path: '.'
+
+      # Paso 4: Desplegar en GitHub Pages
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
